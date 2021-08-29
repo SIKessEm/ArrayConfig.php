@@ -1,0 +1,41 @@
+{
+    "name": "sikessem/array-config",
+    "type": "library",
+    "description": "PHP configuration with arrays",
+    "license": "Apache-2.0",
+    "keywords": [
+        "array-config",
+        "sikessem",
+        "php"
+    ],
+    "authors": [{
+        "homepage": "https://sikessem.com/",
+        "name": "SIGUI Kessé Emmanuel",
+        "email": "contact@sikessem.com",
+        "role": "Developer"
+    }],
+    "support": {
+        "source": "https://github.com/SIKessEm/ArrayConfig.php",
+        "issues": "https://github.com/SIKessEm/ArrayConfig.php/issues"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "files": [
+            "ext/array-config.php"
+        ],
+        "psr-4": {
+          "SIKessEm\\ArrayConfig\\": "lib/"
+        }
+    },
+    "homepage": "https://github.com/SIKessEm/ArrayConfig.php#readme",
+    "config": {
+    	"vendor-dir": "pkg",
+        "bin-dir": "cli",
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

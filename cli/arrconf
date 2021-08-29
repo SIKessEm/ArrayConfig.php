@@ -1,0 +1,19 @@
+#!/usr/bin/php
+<?php
+
+require_once dirname(__DIR__) . '/pkg/autoload.php';
+
+$arrconf = array_config(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'cfg');
+
+$info = $arrconf->load('arrconf');
+
+echo <<<EOL
+
+Thank you for using the {$info->package->name} package!
+
+  - Source code : {$info->package->repo}
+  - Author : {$info->author->name} ({$info->author->website}) <{$info->author->email}>
+
+Configure on the fly!
+
+EOL;
