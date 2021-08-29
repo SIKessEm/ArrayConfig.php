@@ -1,6 +1,6 @@
 <?php namespace SIKessEm\ArrayConfig;
 
-class Settings implements \ArrayAccess, \Countable {
+class Settings implements \ArrayAccess, \Countable, \IteratorAggregate {
 
   public function __construct(array $options = []) {
     $this->setOptions($options);
@@ -31,8 +31,8 @@ class Settings implements \ArrayAccess, \Countable {
     return count($this->options);
   }
 
-  public function getIterator(): Traversable {
-    return new ArrayIterator($this->options);
+  public function getIterator(): \Traversable {
+    return new \ArrayIterator($this->options);
   }
 
   /**
