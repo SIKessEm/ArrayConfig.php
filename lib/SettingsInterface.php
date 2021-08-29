@@ -2,9 +2,4 @@
 
 interface SettingsInterface
 
-extends SettingsOptionsInterface, SettingsOffsetsInterface, MagicSettingsInterface, \Countable, \IteratorAggregate {
-
-  function count(): int;
-
-  function getIterator(): \Traversable;
-}
+extends SettingsOptionsInterface, SettingsOffsetsInterface, MagicSettingsInterface, SettingsArrayInterface {}
