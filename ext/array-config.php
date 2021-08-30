@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php use SIKessEm\ArrayConfig\Loader;
 
 function array_config(string $dir): Loader {
