@@ -8,5 +8,5 @@ interface LoadInterface {
    * @param  string $file The file to load
    * @return Settings     The configuration options
    */
-  function load(string $file): Settings;
+  function load(string $file): SettingsInterface;
 }

@@ -9,7 +9,7 @@ trait LoadTrait {
    * @throws namespace\Error If the file is invalid
    * @return Settings        The configuration options
    */
-  function load(string $file): Settings {
+  function load(string $file): SettingsInterface {
 
     if(empty($file))
       throw new Error('Empty file name given', Error::INVALID_FILE);
