@@ -1,9 +1,11 @@
 #!/usr/bin/php
 <?php
 
+use function SIKessEm\ArrayConfig\loader;
+
 require_once dirname(__DIR__) . '/pkg/autoload.php';
 
-$arrconf = array_config(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'cfg');
+$arrconf = loader(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'cfg');
 
 $info = $arrconf->load('arrconf');
 

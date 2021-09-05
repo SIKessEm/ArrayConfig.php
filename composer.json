@@ -23,7 +23,7 @@
     },
     "autoload": {
         "files": [
-            "ext/array-config.php"
+            "ext/sikessem-array_config.php"
         ],
         "psr-4": {
           "SIKessEm\\ArrayConfig\\": "lib/"

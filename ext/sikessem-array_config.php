@@ -1,6 +1,7 @@
-<?php use SIKessEm\ArrayConfig\Loader;
+<?php namespace SIKessEm\ArrayConfig;
 
-function array_config(string $dir): Loader {
+function loader(string $dir): Loader {
+  
   static $loaders;
 
   if(!isset($loaders[$dir])) $loaders[$dir] = new Loader($dir);
